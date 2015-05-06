@@ -2,7 +2,7 @@
 <html class="bg-black">
     <head>
         <meta charset="UTF-8">
-        <title>Administrator| Login</title>
+        <title>Админ | Нэвтрэх</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <link href="{{ admin_asset('components/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css"/>
         <link href="{{ admin_asset('components/fontawesome/css/font-awesome.min.css') }}" rel="stylesheet"
@@ -20,21 +20,21 @@ type="text/css"/>
     <body class="bg-black">
 
         <div class="form-box" id="login-box">
-            <div class="header">Sign In</div>
+            <div class="header">Системд нэвтрэх</div>
             {{ Form::open(['route' => 'admin.login.store']) }}
                 <div class="body bg-gray">
                     <div class="form-group">
-                        <input type="text" name="username" class="form-control" placeholder="Username"/>
+                        <input type="text" name="username" class="form-control" placeholder="Хэрэглэгчийн нэр"/>
                     </div>
                     <div class="form-group">
-                        <input type="password" name="password" class="form-control" placeholder="Password"/>
+                        <input type="password" name="password" class="form-control" placeholder="Нууц үг"/>
                     </div>          
                     <div class="form-group checkbox" style="margin-left:20px;">
-                        <input type="checkbox" name="rememner" value="1" /> Remember me
+                        <input type="checkbox" name="rememner" value="1" /> Намайг сана
                     </div>
                 </div>
                 <div class="footer">                                                               
-                    <button type="submit" class="btn bg-olive btn-block">Sign me in</button>  
+                    <button type="submit" class="btn bg-olive btn-block">Нэвтрэх</button>  
                     <!-- 
                     <p><a href="#">I forgot my password</a></p>
                     
