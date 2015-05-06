@@ -55,6 +55,27 @@
 	<!-- ./col -->
 	<div class="col-lg-3 col-xs-6">
 		<!-- small box -->
+		<div class="small-box bg-red">
+			<div class="inner">
+				<h3>
+					{{ \Acme\Tour::count() }}
+				</h3>
+
+				<p>
+					Нийт Аялал
+				</p>
+			</div>
+			<div class="icon">
+				<i class="fa fa-map-marker"></i>
+			</div>
+			<a href="{{ route('admin.tours.index') }}" class="small-box-footer">
+				Цааш <i class="fa fa-arrow-circle-right"></i>
+			</a>
+		</div>
+	</div>
+	<!-- ./col -->
+	<div class="col-lg-3 col-xs-6">
+		<!-- small box -->
 		<div class="small-box bg-yellow">
 			<div class="inner">
 				<h3>

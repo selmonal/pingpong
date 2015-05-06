@@ -8,3 +8,4 @@ composer.lock
 Thumbs.db
 .phpintel
 public/images/*
+public/ckfinder/*

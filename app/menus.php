@@ -17,6 +17,12 @@ $menu = Menu::create('admin-menu', function ($menu)
 {
     $menu->setPresenter('Pingpong\Admin\Presenters\SidebarMenuPresenter');
     $menu->route('admin.home', 'Хяналтын самбар', [], ['icon' => 'fa fa-dashboard']);
+    $menu->dropdown('Аялал', function ($sub)
+    {
+        $sub->route('admin.tours.index', 'Аялалын жагсаалт');
+        $sub->route('admin.tours.create', 'Шинээр нэмэх');
+        $sub->route('admin.tour_categories.index', 'Ангилал');
+    }, ['icon' => 'fa fa-map-marker']);
     $menu->dropdown('Мэдээ, мэдээлэл', function ($sub)
     {
         $sub->route('admin.articles.index', 'Мэдээний жагсаалт');
