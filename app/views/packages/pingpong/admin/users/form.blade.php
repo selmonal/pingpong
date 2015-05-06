@@ -23,11 +23,11 @@
 		{{ Form::password('password', ['class' => 'form-control']) }}
 		{{ $errors->first('password', '<div class="text-danger">:message</div>') }}
 	</div>
-	<div class="form-group">
+	<!-- <div class="form-group">
 		{{ Form::label('gender', 'Хүйс:') }}
 		{{ Form::select('gender', ['Male' => 'Laki-laki', 'Female' => 'Perempuan'], null, ['class' => 'form-control']) }}
 		{{ $errors->first('gender', '<div class="text-danger">:message</div>') }}
-	</div>
+	</div> -->
 	<div class="form-group">
 		{{ Form::label('role', 'Хэрэгдэгчийн төрөл:') }}
 		{{ Form::select('role', $roles, isset($role) ? $role : null, ['class' => 'form-control']) }}
