@@ -13,5 +13,6 @@ Route::group(['prefix' => 'admin', 'before' => 'admin.auth', 'namespace' => 'Adm
 	Route::resource('tours', 'ToursController', $options);
 	Route::resource('tour_categories', 'TourCategoriesController', $options);
 	Route::resource('feedbacks', 'FeedbacksController', ['only' => ['index', 'show', 'destroy']]);
+	Route::resource('settings/file_editor', 'FileEditorController', ['only' => ['index', 'edit', 'update']]);
 
 });

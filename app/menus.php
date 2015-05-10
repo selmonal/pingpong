@@ -46,6 +46,6 @@ $menu = Menu::create('admin-menu', function ($menu)
     $menu->route('admin.feedbacks.index', 'Санал хүсэлт', [], ['icon' => 'fa fa-comment']);
     $menu->dropdown('Тохиргоо', function ($sub)
     {
-        // $sub->route('admin.settings.files', 'Файл засварлах');
+        $sub->route('admin.settings.file_editor.index', 'Файл засварлах');
     }, ['icon' => 'fa fa-cogs']);
 });
