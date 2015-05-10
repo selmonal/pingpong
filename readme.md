@@ -4,5 +4,5 @@ This is transleted version of [pingpong-labs/admin](https://github.com/pingpong-
 
 ## Installation
 
-git clone git@github.com:selmonal/pingpong.git
-composer update
+    git clone git@github.com:selmonal/pingpong.git
+    composer update
