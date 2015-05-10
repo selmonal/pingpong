@@ -9,7 +9,7 @@
 	</h1>
 	@else
 	<h1>
-		All Pages ({{ $articles->getTotal() }})
+		Хуудас ({{ $articles->getTotal() }})
 		&middot;
 		<small>{{ link_to_route('admin.pages.create', 'Шинээр нэмэх') }}</small>
 	</h1>
@@ -33,7 +33,10 @@
 			@foreach ($articles as $article)
 			<tr>
 				<td>{{ $no }}</td>
-				<td>{{ $article->title }}</td>
+				<td>
+					<a href="{{ url((isOnPages() ? 'pages' : 'articles'). '/' . $article->slug . '.html') }}" target="_blank" class="fa fa-globe user-url"></a>
+					{{ $article->title }}					
+				</td>
 				<td>{{ $article->user->name }}</td>
 				@if( ! isOnPages())
 				<td>{{ $article->category ? $article->category->name : null }}</td>

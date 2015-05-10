@@ -43,4 +43,9 @@ $menu = Menu::create('admin-menu', function ($menu)
         $sub->route('admin.roles.index', 'Хэрэглэгчийн төрөл');
         $sub->route('admin.permissions.index', 'Эрх');
     }, ['icon' => 'fa fa-users']);
+    $menu->route('admin.feedbacks.index', 'Санал хүсэлт', [], ['icon' => 'fa fa-comment']);
+    $menu->dropdown('Тохиргоо', function ($sub)
+    {
+        // $sub->route('admin.settings.files', 'Файл засварлах');
+    }, ['icon' => 'fa fa-cogs']);
 });

@@ -3541,3 +3541,13 @@ fieldset[disabled] .btn-vk.active {
 .user-url {
   margin-right: 5px;
 }
+
+.row-checked {
+  background: #F4F3F3;
+  font-weight: normal;
+}
+
+.row-unchecked {
+  background: white;
+  font-weight: bold;
+}
