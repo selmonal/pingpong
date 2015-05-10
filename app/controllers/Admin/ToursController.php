@@ -63,6 +63,7 @@ class ToursController extends BaseController {
 		app('Acme\Validation\Tour\Create')->validate($data = $this->inputAll());
 
 		unset($data['image']);
+		unset($data['tags']);
 
 		if (\Input::hasFile('image'))
         {
@@ -73,6 +74,7 @@ class ToursController extends BaseController {
         }
 
         $tour = Tour::create($data);
+        $tour->tag(\Input::get('tags'));
 
         return $this->redirect('tours.index');
 	}
@@ -114,6 +116,7 @@ class ToursController extends BaseController {
             app('Acme\Validation\Tour\Create')->validate($data = $this->inputAll());
 
             unset($data['image']);
+            unset($data['tags']);
 
             if (\Input::hasFile('image'))
             {
@@ -125,6 +128,7 @@ class ToursController extends BaseController {
             }
 
             $tour->update($data);
+            $tour->retag(\Input::get('tags'));
 
             return $this->redirect('tours.index');
         }

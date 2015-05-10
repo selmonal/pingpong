@@ -37,6 +37,11 @@
 		{{ $errors->first('like_count', '<div class="text-danger">:message</div>') }}
 	</div>
 	<div class="form-group">
+		{{ Form::label('tags', 'Аялалын түлхүүр:') }}
+		{{ Form::text('tags', (isset($model) ? $model->tagList : null), ['class' => 'form-control', 'id' => "tour-tags"]) }}
+		{{ $errors->first('tags', '<div class="text-danger">:message</div>') }}
+	</div>
+	<div class="form-group">
 		{{ Form::label('image', 'Зураг:') }}
 		{{ Form::file('image', ['class' => 'form-control']) }}
 		{{ $errors->first('image', '<div class="text-danger">:message</div>') }}
@@ -79,6 +84,27 @@
 	{{ script('vendor/ckfinder/ckfinder.js') }}
 	
 	<script type="text/javascript">
+		$(document).ready(function() {
+			var sampleTags = [
+				'Flight',
+				'City bus',
+				'Hotel',
+				'Ger camp',
+				'Event & Naadam',
+				'Horse riding',
+				'Train',
+				'Local family',
+				'Tent nights',
+				'Short walking',
+				'Camel riding'
+			];
+
+			$('#tour-tags').tagit({
+				allowSpaces: true,
+				availableTags: sampleTags,
+				removeConfirmation: true
+			});
+		});
 		CKEDITOR.editorConfig = function( config ) {
 			var prefix = '/{{ option("ckfinder.prefix") }}';
 

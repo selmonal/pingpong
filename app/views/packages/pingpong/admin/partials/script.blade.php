@@ -12,10 +12,10 @@
 <script src="{{ admin_asset('adminlte/js/plugins/daterangepicker/daterangepicker.js') }}" type="text/javascript"></script>
 <!-- datepicker -->
 <script src="{{ admin_asset('adminlte/js/plugins/datepicker/bootstrap-datepicker.js') }}" type="text/javascript"></script>
-<!-- Bootstrap WYSIHTML5 -->
-<script src="{{ admin_asset('adminlte/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js') }}" type="text/javascript"></script>
 <!-- iCheck -->
 <script src="{{ admin_asset('adminlte/js/plugins/iCheck/icheck.min.js') }}" type="text/javascript"></script>
+<!-- Tag it -->
+<script src="{{ admin_asset('adminlte/js/plugins/tag-it/tag-it.min.js') }}" type="text/javascript"></script>
 
 <!-- AdminLTE App -->
 <script src="{{ admin_asset('adminlte/js/AdminLTE/app.js') }}" type="text/javascript"></script>

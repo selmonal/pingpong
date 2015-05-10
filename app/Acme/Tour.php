@@ -1,9 +1,13 @@
 <?php namespace Acme;
 
-use Pingpong\Presenters\Model;
+use Cviebrock\EloquentTaggable\Taggable;
+use Cviebrock\EloquentTaggable\TaggableImpl;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Pingpong\Presenters\Model;
 
-class Tour extends Model {
+class Tour extends Model implements Taggable {
+
+    use TaggableImpl;
 
     /**
      * @var string

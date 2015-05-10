@@ -11,8 +11,9 @@ type="text/css"/>
 <link href="{{ admin_asset('adminlte/css/datepicker/datepicker3.css') }}" rel="stylesheet" type="text/css"/>
 <!-- Daterange picker -->
 <link href="{{ admin_asset('adminlte/css/daterangepicker/daterangepicker-bs3.css') }}" rel="stylesheet" type="text/css"/>
-<!-- bootstrap wysihtml5 - text editor -->
-<link href="{{ admin_asset('adminlte/css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css') }}" rel="stylesheet" type="text/css"/>
+<!-- Tag it -->
+<link href="{{ admin_asset('adminlte/css/tag-it/jquery.tagit.css') }}" rel="stylesheet" type="text/css"/>
+<link href="{{ admin_asset('adminlte/css/tag-it/tagit.ui-zendesk.css') }}" rel="stylesheet" type="text/css"/>
 <!-- Theme style -->
 <link href="{{ admin_asset('adminlte/css/AdminLTE.css') }}" rel="stylesheet" type="text/css"/>
 

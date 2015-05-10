@@ -123,6 +123,7 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Pingpong\Admin\Providers\SupportServiceProvider',
 		'Pingpong\Admin\AdminServiceProvider',
+		'Cviebrock\EloquentTaggable\TaggableServiceProvider',
 
 	),
 
