@@ -6,14 +6,9 @@ class FileEditorController extends BaseController {
 
 	static $editableFiles = [
 		[
-			'name' => 'Цэс',
+			'name' => 'Нүүр хуудас',
 			'path' => 'views/hello.php',
-			'description' => 'Толгой хэсгийн хэсгийн цэсний файл'
-		],
-		[
-			'name' => 'Холбоо барих хуудас',
-			'path' => 'views/hello.php',
-			'description' => 'Холбоо барих хуудас'
+			'description' => 'Нүүр хуудас засварлах'
 		]
 	];
 
