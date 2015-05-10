@@ -28,7 +28,7 @@ $menu = Menu::create('admin-menu', function ($menu)
         $sub->route('admin.articles.index', 'Мэдээний жагсаалт');
         $sub->route('admin.articles.create', 'Шинээр нэмэх');
         $sub->divider();
-        $sub->route('admin.categories.index', 'Ангилалууд');
+        $sub->route('admin.categories.index', 'Ангилал');
     }, ['icon' => 'fa fa-book']);
     $menu->dropdown('Хуудсууд', function ($sub)
     {

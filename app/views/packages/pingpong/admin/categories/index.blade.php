@@ -2,7 +2,7 @@
 
 @section('content-header')
 	<h1>
-		Ангилалууд ({{ $categories->getTotal() }})
+		Ангилал ({{ $categories->getTotal() }})
 		&middot;
 		<small>{{ link_to_route('admin.categories.create', 'Шинээр нэмэх') }}</small>
 	</h1>
