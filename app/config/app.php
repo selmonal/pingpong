@@ -124,6 +124,8 @@ return array(
 		'Pingpong\Admin\Providers\SupportServiceProvider',
 		'Pingpong\Admin\AdminServiceProvider',
 		'Cviebrock\EloquentTaggable\TaggableServiceProvider',
+		'Acme\Providers\SupportServiceProvider',
+		'Acme\Providers\ErrorServiceProvider'
 
 	),
 
