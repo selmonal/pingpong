@@ -2,7 +2,7 @@
 
 @section('content-header')
 	<h1>
-	Settings
+	Ерөнхий тохиргоо
 	</h1>
 @stop
 
@@ -10,13 +10,13 @@
 
 <!-- Nav tabs -->
 <ul class="nav nav-tabs">
-	<li class="active"><a href="#general" data-toggle="tab">General</a></li>
-	<li><a href="#data" data-toggle="tab">Data</a></li>
+	<li class="active"><a href="#general" data-toggle="tab">Сайт</a></li>
+	<li><a href="#data" data-toggle="tab">Өгөгдөл</a></li>
 	<li><a href="#social" data-toggle="tab">Social Media</a></li>
 	<li><a href="#seo" data-toggle="tab">SEO</a></li>
 	<li><a href="#analytics" data-toggle="tab">Analytics</a></li>
 	<li><a href="#backup" data-toggle="tab">Cache And Reset</a></li>
-	<li><a href="#developers" data-toggle="tab">Developers</a></li>
+	<li><a href="#developers" data-toggle="tab">Хөгжүүлэгч</a></li>
 </ul>
 
 <!-- Tab panes -->
@@ -25,17 +25,17 @@
 		<h3></h3>
 		{{ Form::open() }}
 		<div class="form-group">
-			{{ Form::label('site_name', 'Site Name:') }}
+			{{ Form::label('site_name', 'Сайтын нэр:') }}
 			{{ Form::text('site_name', option('site.name'), ['class' => 'form-control']) }}
 			{{ $errors->first('site_name', '<div class="text-danger">:message</div>') }}
 		</div>
 		<div class="form-group">
-			{{ Form::label('site.slogan', 'Slogan:') }}
+			{{ Form::label('site.slogan', 'Уриа:') }}
 			{{ Form::text('site.slogan', option('site.slogan'), ['class' => 'form-control']) }}
 			{{ $errors->first('site.slogan', '<div class="text-danger">:message</div>') }}
 		</div>
 		<div class="form-group">
-			{{ Form::label('site.description', 'Description:') }}
+			{{ Form::label('site.description', 'Тайлбар:') }}
 			{{ Form::textarea('site.description', option('site.description'), ['class' => 'form-control']) }}
 			{{ $errors->first('site.description', '<div class="text-danger">:message</div>') }}
 		</div>
@@ -48,7 +48,7 @@
 		<h3></h3>
 		{{ Form::open() }}
 		<div class="form-group">
-			{{ Form::label('pagination.perpage', 'Pagination Per Page:') }}
+			{{ Form::label('pagination.perpage', 'Нэг хуудсанд гарах бичлэгийн тоо:') }}
 			{{ Form::text('pagination.perpage', option('pagination.perpage'), ['class' => 'form-control']) }}
 			{{ $errors->first('pagination.perpage', '<div class="text-danger">:message</div>') }}
 		</div>
@@ -96,7 +96,7 @@
 		<h3></h3>
 		{{ Form::open() }}
 		<div class="form-group">
-			{{ Form::label('site.keywords', 'Keyword:') }}
+			{{ Form::label('site.keywords', 'Түлхүүр үг:') }}
 			{{ Form::text('site.keywords', option('site.keywords'), ['class' => 'form-control']) }}
 			{{ $errors->first('site.keywords', '<div class="text-danger">:message</div>') }}
 		</div>
