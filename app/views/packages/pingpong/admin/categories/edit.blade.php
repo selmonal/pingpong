@@ -4,7 +4,7 @@
 	<h1>
 		Засах
 		&middot;
-		<small>{{ link_to_route('admin.categories.index', 'Back') }}</small>
+		<small>{{ link_to_route('admin.categories.index', 'Буцах') }}</small>
 	</h1>
 @stop
 

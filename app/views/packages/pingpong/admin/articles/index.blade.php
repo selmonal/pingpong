@@ -44,11 +44,11 @@
 				<td>{{ $article->created_at }}</td>
 				<td class="text-center">
 					@if(isOnPages())
-						<a href="{{ route('admin.pages.edit', $article->id) }}">Edit</a>
+						<a href="{{ route('admin.pages.edit', $article->id) }}">Засах</a>
 						&middot;
 						@include('admin::partials.modal', ['data' => $article, 'name' => 'pages'])
 					@else
-						<a href="{{ route('admin.articles.edit', $article->id) }}">Edit</a>
+						<a href="{{ route('admin.articles.edit', $article->id) }}">Засах</a>
 						&middot;
 						@include('admin::partials.modal', ['data' => $article, 'name' => 'articles'])
 					@endif

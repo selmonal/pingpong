@@ -5,7 +5,7 @@
 	<h1>
 		Шинээр нэмэх
 		&middot;
-		<small>{{ link_to_route('admin.roles.index', 'Back') }}</small>
+		<small>{{ link_to_route('admin.roles.index', 'Буцах') }}</small>
 	</h1>
 	
 @stop
