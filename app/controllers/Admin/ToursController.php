@@ -113,7 +113,7 @@ class ToursController extends BaseController {
         {
             $tour = Tour::findOrFail($id);
 
-            app('Acme\Validation\Tour\Create')->validate($data = $this->inputAll());
+            app('Acme\Validation\Tour\Update')->validate($data = $this->inputAll());
 
             unset($data['image']);
             unset($data['tags']);

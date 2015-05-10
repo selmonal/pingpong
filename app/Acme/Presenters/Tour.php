@@ -8,4 +8,15 @@ class Tour extends Presenter {
     {
         return public_path("images/articles/{$this->resource->image}");
     }
+
+    /**
+     * Return the url for user.
+     * 
+     * @return string
+     */
+    public function userUrl()
+    {
+    	return url("tours/{$this->resource->slug}.html");
+    }
+    
 } 

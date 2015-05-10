@@ -9,6 +9,11 @@
 		{{ $errors->first('name', '<div class="text-danger">:message</div>') }}
 	</div>
 	<div class="form-group">
+		{{ Form::label('slug', 'Холбоос:') }}
+		{{ Form::text('slug', null, ['class' => 'form-control']) }}
+		{{ $errors->first('slug', '<div class="text-danger">:message</div>') }}
+	</div>
+	<div class="form-group">
 		{{ Form::label('tour_category_id', 'Ангилал:') }}
 		{{ Form::select('tour_category_id', $categories, null, ['class' => 'form-control']) }}
 		{{ $errors->first('tour_category_id', '<div class="text-danger">:message</div>') }}

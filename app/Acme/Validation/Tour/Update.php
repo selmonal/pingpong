@@ -1,13 +1,14 @@
 <?php namespace Acme\Validation\Tour;
 
 use Pingpong\Validator\Validator;
+use Illuminate\Support\Facades\Request;
 
-class Create extends Validator {
+class Update extends Validator {
 
 	public function rules()
 	{
 		return [
-	        'slug' => 'required|unique:tours,slug',
+	        'slug' => 'required|unique:tours,slug,' . Request::segment(3),
 	        'tour_category_id' => 'required|exists:tour_categories,id',
 	    	'like_count' => 'integer', 
 	    	'name' => 'required',

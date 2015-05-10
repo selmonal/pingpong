@@ -24,7 +24,10 @@
 			@foreach ($tours as $tour)
 			<tr>
 				<td>{{ $no }}</td>
-				<td>{{ $tour->name }}</td>
+				<td>
+					<a class="fa fa-globe user-url" href="{{ $tour->present()->userUrl }}" target="_blank"></a>
+					{{ $tour->name }}
+				</td>
 				<td>{{ $tour->start_date }}</td>
 				<td>{{ $tour->end_date }}</td>
 				<td>{{ $tour->category->name }}</td>

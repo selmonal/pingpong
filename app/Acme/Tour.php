@@ -18,6 +18,7 @@ class Tour extends Model implements Taggable {
      * @var array
      */
     protected $fillable = [
+        'slug',
     	'tour_category_id', 
     	'like_count', 
     	'name',
