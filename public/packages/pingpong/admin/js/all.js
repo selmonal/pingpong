@@ -19,6 +19,7 @@ $('[name=title], [name=name]').on('keyup', function ()
 
 });
 
+// Admin side menu. It opens active box.
 $(document).ready(function() {
 	$('.sidebar-menu li.active')
 		.parents('.treeview').addClass('active')
