@@ -35,11 +35,16 @@
   			type: 'POST',
   			data: { '_method' : 'PUT', 'content': editor.getValue() },
   			url: '{{ route('admin.settings.file_editor.update', urlencode($file['path'])) }}',
+            beforeSend: function() {
+                $('.btn-update').attr('disabled', 'disabled');
+            },
   			success: function() {
   				alert('Амжилттай хадгалагдлаа.');
+                $('.btn-update').removeAttr('disabled');
   			},
   			error: function() {
   				alert('Хадгалахад алдаа гарлаа');
+                $('.btn-update').removeAttr('disabled');
   			}
   		})
   	})
