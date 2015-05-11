@@ -11,4 +11,4 @@ class TourFormComposer {
         $view->with(compact('categories'));
     }
 
-}	
+}

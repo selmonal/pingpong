@@ -16,5 +16,16 @@ class TourCategoryRepository {
 	{
 		$this->model = $model;
 	}
-	
+
+	/**
+	 * Find category using slug.
+	 *
+	 * @param string $slug
+	 * @return TourCategory
+	 */
+	public function findBySlug($slug)
+	{
+		return $this->model->where('slug', $slug)->first();
+	}
+
 }

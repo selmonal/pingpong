@@ -18,3 +18,9 @@ $('[name=title], [name=name]').on('keyup', function ()
     $('.slug-preview').text(slug);
 
 });
+
+$(document).ready(function() {
+	$('.sidebar-menu li.active')
+		.parents('.treeview').addClass('active')
+		.find('ul.treeview-menu').attr('style', 'display:block');
+});

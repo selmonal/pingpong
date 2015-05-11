@@ -4,6 +4,11 @@ use Pingpong\Presenters\Presenter;
 
 class Tour extends Presenter {
 
+    /**
+     * Return featured image url.
+     * 
+     * @return string
+     */
     public function image_path()
     {
         return public_path("images/articles/{$this->resource->image}");
